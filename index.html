@@ -8,10 +8,10 @@
 	<!--<script src="script.js"></script>-->
 </head>
 
-<body onload="toggleInstructions()">
-	<h1 style="color:midnightblue;"> Flail Ballistics Calculator </h1>
+<body onload="toggleInstructions()" style="width: 50%;margin: 0 auto;">
+	<h1 style="color:midnightblue;width: 50%;margin: 0 auto;"> Flail Ballistics Calculator </h1>
 
-	<table>
+	<table style="width: 50%;margin: 0 auto;">
 
 		<tr>
 			<td align="left">Auto guess?</td>
@@ -38,10 +38,12 @@
 			<td align="left"><div id="angle">0 deg</div></td>
 		</tr>
 	</table>
+	
+	<div style="width: 50%;margin: 0 auto;">
+		<button onclick="toggleInstructions()">Instructions</button>
+	</div>
 
-	<button onclick="toggleInstructions()">Instructions</button>
-
-	<div id="instructions">
+	<div id="instructions" style="width: 50%;margin: 0 auto;">
 		<p>
 			Changes in elevation over the "Dart Distance", or "Final Impact" can cause the calculation to be inaccurate.<br />
 			If not using auto guess, change the "Dart Distance" and "Height" parameters until the desired "Final Impact" distance is reached.<br />
